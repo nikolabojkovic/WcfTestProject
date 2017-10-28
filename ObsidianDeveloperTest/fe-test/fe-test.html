@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    
+    <link rel="stylesheet" type="text/css" href="/felibs/foundation/css/foundation.css" />
+    <link rel="stylesheet" type="text/css" href="/felibs/foundation/fonts/foundation-icons.css" />
+
+    <script src="/felibs/foundation/js/vendor/jquery.js"></script>
+    
+
+    <script src="/felibs/foundation/js/vendor/modernizr.js"></script>
+
+    <script src="/felibs/charting/globalize.min.js"></script>
+    <script src="/felibs/charting/dx.chartjs.js"></script>
+    <script src="/felibs/charting/knockout-3.0.0.js"></script>
+    <script src="/felibs/customJavaScript.js"></script>
+
+    <style>
+
+        .columns { 
+            padding: 20px 20px 0px 20px;
+        }
+
+        .panel {
+            background-color: #e6e6ff;
+            border: solid 1px #ccccff;
+            padding: 20px;
+            margin: 0px;
+        }
+        
+        .options {
+            padding: 20px;
+            background-color: #f5f5f5;
+            margin-top: 20px;
+        }
+
+        .option {
+            margin-top: 10px;
+        }
+
+        .caption {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .option > span {
+            margin-right: 10px;
+        }
+
+        .option > .dx-widget {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="small-12 large-6 columns">
+            <div class="panel" id="fundResults">
+                <table>
+                    <thead>
+                        <tr>
+                           <th width="120">Date</th>
+                           <th>Return %</th>
+                           <th>Total Return to Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="fundPerformance"></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="small-12 large-6 columns">
+            <div class="panel dx-viewport" id="graphObject">
+                <div class="demo-container">
+                    <div id="chart-demo">
+                        <div id="chart"></div>
+                        <div class="options">
+                            <div class="caption">Options</div>
+                            <div class="option">
+                                <span>Series Type</span>
+                                <div id="types"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 large-6 columns">
+            <div class="panel">Box 3</div>
+        </div>
+        <div class="small-12 large-6 columns">
+            <div class="panel">Box 4</div>
+        </div>
+    </div>
+    This is the container page where the test front-end code should be implemented.
+</body>
+</html>

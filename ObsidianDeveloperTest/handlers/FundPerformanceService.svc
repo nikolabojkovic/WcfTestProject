@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="ObsidianDeveloperTest.FundPerformanceService" CodeBehind="FundPerformanceService.svc.cs" %>

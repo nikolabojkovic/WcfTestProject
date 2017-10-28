@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3209AF54-0910-4794-A449-E8FDEBA8C998}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ObsidianDeveloperTest</RootNamespace>
+    <AssemblyName>ObsidianDeveloperTest</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort>44303</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="felibs\foundation\css\foundation.css.orig" />
+    <Content Include="felibs\foundation\fonts\.fontcustom-data" />
+    <Content Include="felibs\foundation\fonts\foundation-icons.eot" />
+    <Content Include="felibs\foundation\fonts\foundation-icons.ttf" />
+    <Content Include="felibs\foundation\fonts\foundation-icons.woff" />
+    <Content Include="felibs\foundation\img\.gitkeep" />
+    <Content Include="data\PerformanceData.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fe-test\fe-test.html" />
+    <Content Include="felibs\charting\dx.chartjs.js" />
+    <Content Include="felibs\charting\globalize.min.js" />
+    <Content Include="felibs\charting\knockout-3.0.0.js" />
+    <Content Include="felibs\foundation\css\foundation.css" />
+    <Content Include="felibs\foundation\css\foundation.min.css" />
+    <Content Include="felibs\foundation\css\normalize.css" />
+    <Content Include="felibs\foundation\fonts\foundation-icons.css" />
+    <Content Include="felibs\foundation\fonts\foundation-icons.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-address-book.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-alert.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-align-center.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-align-justify.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-align-left.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-align-right.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-anchor.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-annotate.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-archive.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-arrow-down.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-arrow-left.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-arrow-right.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-arrow-up.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-arrows-compress.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-arrows-expand.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-arrows-in.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-arrows-out.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-asl.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-asterisk.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-at-sign.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-background-color.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-battery-empty.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-battery-full.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-battery-half.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-bitcoin-circle.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-bitcoin.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-blind.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-bluetooth.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-bold.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-book-bookmark.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-book.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-bookmark.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-braille.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-burst-new.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-burst-sale.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-burst.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-calendar.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-camera.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-check.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-checkbox.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-clipboard-notes.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-clipboard-pencil.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-clipboard.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-clock.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-closed-caption.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-cloud.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-comment-minus.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-comment-quotes.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-comment-video.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-comment.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-comments.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-compass.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-contrast.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-credit-card.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-crop.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-crown.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-css3.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-database.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-die-five.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-die-four.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-die-one.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-die-six.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-die-three.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-die-two.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-dislike.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-dollar-bill.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-dollar.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-download.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-eject.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-elevator.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-euro.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-eye.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-fast-forward.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-female-symbol.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-female.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-filter.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-first-aid.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-flag.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-folder-add.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-folder-lock.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-folder.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-foot.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-foundation.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-graph-bar.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-graph-horizontal.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-graph-pie.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-graph-trend.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-guide-dog.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-hearing-aid.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-heart.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-home.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-html5.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-indent-less.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-indent-more.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-info.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-italic.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-key.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-laptop.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-layout.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-lightbulb.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-like.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-link.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-list-bullet.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-list-number.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-list-thumbnails.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-list.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-lock.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-loop.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-magnifying-glass.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-mail.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-male-female.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-male-symbol.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-male.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-map.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-marker.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-megaphone.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-microphone.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-minus-circle.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-minus.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-mobile-signal.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-mobile.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-monitor.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-mountains.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-music.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-next.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-no-dogs.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-no-smoking.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-page-add.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-page-copy.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-page-csv.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-page-delete.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-page-doc.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-page-edit.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-page-export-csv.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-page-export-doc.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-page-export-pdf.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-page-export.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-page-filled.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-page-multiple.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-page-pdf.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-page-remove.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-page-search.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-page.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-paint-bucket.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-paperclip.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-pause.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-paw.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-paypal.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-pencil.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-photo.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-play-circle.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-play-video.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-play.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-plus.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-pound.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-power.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-previous.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-price-tag.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-pricetag-multiple.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-print.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-prohibited.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-projection-screen.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-puzzle.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-quote.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-record.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-refresh.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-results-demographics.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-results.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-rewind-ten.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-rewind.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-rss.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-safety-cone.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-save.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-share.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-sheriff-badge.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-shield.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-shopping-bag.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-shopping-cart.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-shuffle.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-skull.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-500px.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-adobe.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-amazon.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-android.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-apple.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-behance.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-bing.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-blogger.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-delicious.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-designer-news.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-deviant-art.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-digg.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-dribbble.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-drive.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-dropbox.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-evernote.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-facebook.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-flickr.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-forrst.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-foursquare.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-game-center.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-github.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-google-plus.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-hacker-news.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-hi5.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-instagram.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-joomla.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-lastfm.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-linkedin.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-medium.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-myspace.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-orkut.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-path.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-picasa.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-pinterest.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-rdio.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-reddit.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-skillshare.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-skype.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-smashing-mag.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-snapchat.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-spotify.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-squidoo.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-stack-overflow.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-steam.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-stumbleupon.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-treehouse.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-tumblr.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-twitter.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-vimeo.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-windows.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-xbox.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-yahoo.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-yelp.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-youtube.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-zerply.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-social-zurb.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-sound.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-star.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-stop.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-strikethrough.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-subscript.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-superscript.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-tablet-landscape.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-tablet-portrait.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-target-two.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-target.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-telephone-accessible.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-telephone.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-text-color.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-thumbnails.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-ticket.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-torso-business.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-torso-female.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-torso.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-torsos-all-female.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-torsos-all.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-torsos-female-male.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-torsos-male-female.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-torsos.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-trash.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-trees.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-trophy.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-underline.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-universal-access.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-unlink.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-unlock.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-upload-cloud.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-upload.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-usb.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-video.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-volume-none.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-volume-strike.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-volume.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-web.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-wheelchair.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-widget.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-wrench.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-x-circle.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-x.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-yen.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-zoom-in.svg" />
+    <Content Include="felibs\foundation\fonts\svgs\fi-zoom-out.svg" />
+    <Content Include="felibs\foundation\js\foundation.min.js" />
+    <Content Include="felibs\foundation\js\foundation\foundation.abide.js" />
+    <Content Include="felibs\foundation\js\foundation\foundation.accordion.js" />
+    <Content Include="felibs\foundation\js\foundation\foundation.alert.js" />
+    <Content Include="felibs\foundation\js\foundation\foundation.clearing.js" />
+    <Content Include="felibs\foundation\js\foundation\foundation.dropdown.js" />
+    <Content Include="felibs\foundation\js\foundation\foundation.equalizer.js" />
+    <Content Include="felibs\foundation\js\foundation\foundation.interchange.js" />
+    <Content Include="felibs\foundation\js\foundation\foundation.joyride.js" />
+    <Content Include="felibs\foundation\js\foundation\foundation.js" />
+    <Content Include="felibs\foundation\js\foundation\foundation.magellan.js" />
+    <Content Include="felibs\foundation\js\foundation\foundation.offcanvas.js" />
+    <Content Include="felibs\foundation\js\foundation\foundation.orbit.js" />
+    <Content Include="felibs\foundation\js\foundation\foundation.reveal.js" />
+    <Content Include="felibs\foundation\js\foundation\foundation.slider.js" />
+    <Content Include="felibs\foundation\js\foundation\foundation.tab.js" />
+    <Content Include="felibs\foundation\js\foundation\foundation.tooltip.js" />
+    <Content Include="felibs\foundation\js\foundation\foundation.topbar.js" />
+    <Content Include="felibs\foundation\js\vendor\fastclick.js" />
+    <Content Include="felibs\foundation\js\vendor\jquery.cookie.js" />
+    <Content Include="felibs\foundation\js\vendor\jquery.js" />
+    <Content Include="felibs\foundation\js\vendor\modernizr.js" />
+    <Content Include="felibs\foundation\js\vendor\placeholder.js" />
+    <Content Include="felibs\customJavaScript.js" />
+    <Content Include="handlers\FundPerformanceService.svc" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="handlers\DealyReturns.cs" />
+    <Compile Include="handlers\FundPerformanceService.svc.cs">
+      <DependentUpon>FundPerformanceService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\Performance.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3998</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3998/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
